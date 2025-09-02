@@ -6,15 +6,15 @@ export type SpinnerStyle = {
 };
 
 export type Color =
-	| 'black'
-	| 'red'
-	| 'green'
-	| 'yellow'
-	| 'blue'
-	| 'magenta'
-	| 'cyan'
-	| 'white'
-	| 'gray';
+  | 'black'
+  | 'red'
+  | 'green'
+  | 'yellow'
+  | 'blue'
+  | 'magenta'
+  | 'cyan'
+  | 'white'
+  | 'gray';
 
 export type Options = {
 	/**
@@ -141,13 +141,13 @@ Creates a new spinner instance.
 
 @example
 ```
-import yoctoSpinner from 'yocto-spinner';
+import bareSpinner from 'bare-spinner';
 
-const spinner = yoctoSpinner({text: 'Loading…'}).start();
+const spinner = bareSpinner({text: 'Loading…'}).start();
 
 setTimeout(() => {
 	spinner.success('Success!');
 }, 2000);
 ```
 */
-export default function yoctoSpinner(options?: Options): Spinner;
+export default function bareSpinner(options?: Options): Spinner;

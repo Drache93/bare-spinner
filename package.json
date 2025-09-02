@@ -1,62 +1,74 @@
 {
-	"name": "yocto-spinner",
-	"version": "1.0.0",
-	"description": "Tiny terminal spinner",
-	"license": "MIT",
-	"repository": "sindresorhus/yocto-spinner",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
-	"type": "module",
-	"exports": {
-		"types": "./index.d.ts",
-		"default": "./index.js"
-	},
-	"sideEffects": false,
-	"engines": {
-		"node": ">=18.19"
-	},
-	"scripts": {
-		"test": "xo && ava && tsc index.d.ts"
-	},
-	"files": [
-		"index.js",
-		"index.d.ts"
-	],
-	"keywords": [
-		"cli",
-		"spinner",
-		"spinners",
-		"terminal",
-		"term",
-		"console",
-		"ascii",
-		"unicode",
-		"loading",
-		"indicator",
-		"progress",
-		"busy",
-		"wait",
-		"idle",
-		"tiny",
-		"yocto",
-		"micro",
-		"nano"
-	],
-	"dependencies": {
-		"yoctocolors": "^2.1.1"
-	},
-	"devDependencies": {
-		"ava": "^6.1.3",
-		"typescript": "^5.5.4",
-		"xo": "^0.59.3"
-	},
-	"xo": {
-		"rules": {
-			"unicorn/no-process-exit": "off"
-		}
-	}
+  "name": "bare-spinner",
+  "version": "1.0.0",
+  "description": "Tiny terminal spinner that plays with Bears",
+  "license": "MIT",
+  "repository": "drache93/bare-spinner",
+  "funding": "https://github.com/sponsors/drache93",
+  "author": {
+    "name": "Dominic Cassidy",
+    "url": "https://dominic.cassidy.casa"
+  },
+  "type": "module",
+  "exports": {
+    "types": "./index.d.ts",
+    "default": "./index.js"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.19"
+  },
+  "scripts": {
+    "test": "standard && tsc index.d.ts",
+    "fix": "standard --fix"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "bare",
+    "pear",
+    "p2p",
+    "cli",
+    "spinner",
+    "spinners",
+    "terminal",
+    "term",
+    "console",
+    "ascii",
+    "unicode",
+    "loading",
+    "indicator",
+    "progress",
+    "busy",
+    "wait",
+    "idle",
+    "tiny",
+    "micro",
+    "nano"
+  ],
+  "dependencies": {
+    "bare-ansi-escapes": "^2.2.3",
+    "bare-process": "^4.2.1",
+    "bare-tty": "^5.0.3",
+    "process": "npm:bare-node-process",
+    "strip-ansi": "^7.1.0",
+    "tty": "npm:bare-node-tty",
+    "yoctocolors": "^2.1.1"
+  },
+  "devDependencies": {
+    "ava": "^6.1.3",
+    "bare-stream": "^2.7.0",
+    "brittle": "^3.18.0",
+    "end-of-stream": "^1.4.5",
+    "stream": "npm:bare-node-stream",
+    "typescript": "^5.5.4",
+    "xo": "^0.59.3"
+  },
+  "xo": {
+    "rules": {
+      "unicorn/no-process-exit": "off"
+    }
+  }
 }
