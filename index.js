@@ -1,5 +1,5 @@
 import { cursorPosition, cursorUp, eraseLine } from 'bare-ansi-escapes'
-import process from 'bare-process'
+import process from 'process'
 import stripAnsi from 'strip-ansi'
 import yoctocolors from 'yoctocolors'
 

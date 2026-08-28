@@ -10,6 +10,12 @@
     "url": "https://dominic.cassidy.casa"
   },
   "type": "module",
+  "imports": {
+    "process": {
+      "bare": "bare-process",
+      "default": "process"
+    }
+  },
   "exports": {
     "types": "./index.d.ts",
     "default": "./index.js"
